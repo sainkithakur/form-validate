@@ -15,6 +15,7 @@ import Home from "./Components/Home";
 import Contect from "./Components/Contect";
 import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
+import Forget from "./Components/Forget";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route element={<Publicroute />}>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/forget" element={<Forget />} />
         </Route>
         <Route path="*" element={<Nopage />} />
       </Routes>

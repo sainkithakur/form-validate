@@ -62,19 +62,19 @@ const Login = () => {
                 <label htmlFor="password" className="text-sm">
                   Password
                 </label>
-                <a
+                <Link
                   rel="noopener noreferrer"
-                  href="#"
+                  to="/forget"
                   className="text-xs hover:underline "
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
               <input
                 type="password"
                 name="password"
                 onChange={(event) => {
-                  setErrors({...errors,password:""})
+                  setErrors({ ...errors, password: "" });
                   setPassword(event.target.value);
                 }}
                 value={password}
@@ -82,7 +82,6 @@ const Login = () => {
                 placeholder="*****"
                 className="w-full px-3 py-2 border rounded-md "
               />
-              
             </div>
           </div>
           <div className="space-y-2">

@@ -102,9 +102,9 @@ const Signup = () => {
             {validator.message("password", password, "required")}
             {errors?.password}
             <div className="flex justify-end text-xs ">
-              <a rel="noopener noreferrer" href="#">
+              <Link rel="noopener noreferrer" to="/forget">
                 Forgot Password?
-              </a>
+              </Link>
             </div>
           </div>
           <button
